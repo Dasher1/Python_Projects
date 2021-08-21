@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<settings label="Settings Option">
+	<setting id="debug" type="bool" label="Enable debugging mode" default="false" visible="true"/>
+    <setting id="ServerOn" type="bool" label="Enable Herocraft7 Server Default=Dropbox" default="false" visible="true"/>
+    <setting id="Debug_reset" type="bool" label="Enable Reset_Debug" default="false" visible="true"/>
+    <setting label="Cache time (Hours)" type="slider" id="cache_time" default="8" range="0,80" option="int"/>
+    <setting type="action" label="Refresh cache" option="close" action="RunPlugin(plugin://plugin.video.Herocraft7/mode/9)" />
+    <setting type="action" label="Reset" option="close" action="RunPlugin(plugin://plugin.video.Herocraft7/mode/4)" />
+    
+<!-- 	<setting id="regexon" type="bool" label="Enable regex" default="false" visible="true"/>
+	<setting id="HLS" type="bool" label="Enable HLS" default="false" visible="true"/>
+	<setting id="LinkCH" type="bool" label="Enable Link Checker" default="false" visible="true"/>
+	<setting id="thread" type="bool" label="Enable Thread" default="false" visible="true"/>
+	<setting id="HDS" type="bool" label="Enable HDS" default="false" visible="true"/>
+	<setting id="LINK2" type="bool" label="Enable link2" default="false" visible="true"/>
+	<setting id="eng_on" type="bool" label="Enable English" default="false" visible="true"/>
+	<setting id="pak_on" type="bool" label="Enable pakistan" default="false" visible="true"/>
+	<setting id="ind_on" type="bool" label="Enable india" default="false" visible="true"/>
+	<setting id="user_link" type="bool" label="Enable link only" default="false" visible="true"/>
+	<setting id="movies_on" type="bool" label="Enable Movies" default="false" visible="true"/> -->
+<!-- 	<setting label="Username" type="text"   id="username" default=""/>
+	<setting label="Password" type="text"   id="enter_some" option="hidden"  enable="!eq(-1,)" default=""/>"/> 
+	<setting label="Ip address" type="ipaddress" id="ipaddress"/>
+	<setting label="Use livestreamer" type="bool" id="livestreamer" default="false"/>
+    <setting label="Use inputstream.adaptive HLS" type="bool" id="inputstream" default="false"/>-->
+    
+	<!--<setting id="id_addon" type="addon" label="32111" default="" addontype="xbmc.metadata.scraper.movies"  multiselect="true" />-->
+    <category label="Add Source">
+    <setting id="new_url_source" type="text" label="Add URL" default="" visible="eq(-2,1)"/>
+    <setting type="sep" />
+    <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.Herocraft7/mode/2)" />
+    <setting type="sep" />
+    <!--<setting id="searchotherplugins" label="Search Other plugins" type="bool" default="false"/>-->
+  </category>
+  <category label="Upload Source File">
+    <setting id="Upload" type="bool" label="Enable Upload File" default="false" visible="true"/>
+    <setting id="DropboxUP" type="bool" label="Enable Upload File To Dropbox" default="false" visible="true"/>
+    <setting type="sep" />
+    <setting type="action" label="Upload Now" option="close" action="RunPlugin(plugin://plugin.video.Herocraft7/mode/10)" />
+    <setting type="sep" />
+    <!--<setting id="searchotherplugins" label="Search Other plugins" type="bool" default="false"/>-->
+  </category>
+      <category label="Portal">
+    <setting id="DNS" type="text" label="DNS" default="" visible="eq(-2,1)"/>
+    <setting id="MAC" type="text" label="MAC" default="" visible="eq(-2,1)"/>
+    <setting type="sep" />
+    <setting type="action" label="Add Portal" option="close" action="RunPlugin(plugin://plugin.video.Herocraft7/mode/6)" />
+    <setting type="sep" />
+    <!--<setting id="searchotherplugins" label="Search Other plugins" type="bool" default="false"/>-->
+  </category>
+</settings>
+<!--  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.common.plugin.cache" version="2.5.5"/> # Add this
+   <import addon="script.module.routing" />
+ </requires> -->
