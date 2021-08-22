@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<settings label="Settings Option">
+
+  	<category label="Add Dropbox URL">
+	<setting id="New_URL" type="text" label="New URL" default="https://www.dropbox.com/s/d35q4i3694kxb49/source_file.json?dl=1" visible="eq(-2,1)"/>
+	<setting type="sep" />
+	<setting type="action" label="Add URL" option="close" action="RunPlugin(plugin://plugin.video.Stalker_Portal/mode/3)" />
+	<setting type="sep" />
+	<setting id="Dropbox" type="bool" label="Enable Dropbox URL" default="true" visible="true"/>
+	</category>
+  
+  
+</settings>
