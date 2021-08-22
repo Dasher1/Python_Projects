@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.multirepo" name="Repository MultiRepo" version="1.0.1" provider-name="MultiRepo">
     <extension point="xbmc.addon.repository" name="PrimePlay.py">
-        <info compressed="false">https://raw.githubusercontent.com/Addon-Kodi/Multi-Repo/master/addons.xml</info>
+        <info compressed="false">https://github.com/Dasher1/Python_Projects/blob/main/Kodi/Python3/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/Addon-Kodi/Multi-Repo/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.githubusercontent.com/Addon-Kodi/Multi-Repo/master/repo</datadir>
     </extension>
